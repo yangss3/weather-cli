@@ -2,6 +2,8 @@ language: node_js
 node_js: lts/*
 install: npm i
 script: npm test
+before_deploy: 
+  - npm version patch
 deploy:
   provider: npm
   email: yss_2016@outlook.com
