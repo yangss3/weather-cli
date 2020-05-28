@@ -1,6 +1,6 @@
 {
   "name": "@yangss/weather-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Weather query in command line based on node.",
   "main": "index.js",
   "bin": {
