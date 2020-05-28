@@ -2,6 +2,8 @@ const setDefaultConfig = require('../lib/config')
 const fs = require('fs')
 const { configFile } = require('../lib/utils')
 
+jest.mock('fs')
+
 describe('initial config', () => {
   beforeEach(() => {
     fs.unlinkSync(configFile)
