@@ -36,8 +36,8 @@ program
 program
   .command('forecast [city]')
   .description('预测未来的天气情况')
-  .option('-s, --start <start>', '预测的起始日期，0 代表当天，1 代表明天，以此类推')
-  .option('-d, --days <days>', '预测的天数')
+  .option('-s, --start <start>', '预测的起始日期，0 代表当天，1 代表明天，以此类推。默认1')
+  .option('-d, --days <days>', '预测的天数，默认2天')
   .action((city, cmd) => {
     require('../lib/forecast')(city, cmd.opts())
   })
